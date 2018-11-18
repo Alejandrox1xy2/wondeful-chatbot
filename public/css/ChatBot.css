@@ -19,7 +19,13 @@ textarea {
 .header{
 	background-color: #FA8072;
 	color: white;
-	text-align: center;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.header--title {
+  font-size: 2rem;
 }
 
 

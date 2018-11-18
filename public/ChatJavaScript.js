@@ -10,3 +10,11 @@ $(document).ready(function () {
 
     });
 });
+
+const socket = io();
+
+socket.emit('user-message', "hello");
+
+socket.on('bot-response', (res) => {
+    console.log(res)
+})
