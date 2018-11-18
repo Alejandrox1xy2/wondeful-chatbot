@@ -9,12 +9,25 @@ $(document).ready(function () {
         $(document.getElementById('start')).show(1000);
 
     });
+
+    const socket = io();
+
+    $('form').submit(function () {
+        const message = $('#m').val();
+        socket.emit('user-message', message);
+        $('#m').val('');
+        $('#messages').append(`<div class="user-message">${message}<div/>`)
+        const container = document.getElementById('messages');
+        container.scrollTo(0, container.scrollHeight);
+        return false;
+    });
+
+    socket.on('bot-response', function (message) {
+        $('#messages').append(`<div class="bot-message">${message}<div/>`)
+        const container = document.getElementById('messages');
+        container.scrollTo(0, container.scrollHeight);
+    })
 });
 
-const socket = io();
 
-socket.emit('user-message', "hello");
 
-socket.on('bot-response', (res) => {
-    console.log(res)
-})
