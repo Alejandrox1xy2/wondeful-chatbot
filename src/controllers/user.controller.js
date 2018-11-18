@@ -175,6 +175,10 @@ const actions = [
     {
         pattern: /me alegro/gi,
         action: happy
+    },
+    {
+        pattern: /buenos dias/gi,
+        action: sayGoodMorning
     }
 ]
 
