@@ -180,6 +180,11 @@ const actions = [
         pattern: /buenos dias/gi,
         action: sayGoodMorning
     }
+    ,
+    {
+        pattern: /buenos noches/gi,
+        action: sayGoodEvening
+    }
 ]
 
 const dispatch = message => {
