@@ -80,7 +80,18 @@ footer {
 }
 
 
+#m{
+  border-radius: 20px;
+}
 
+#frm{
+  background-color: grey 
+}
+
+#butt{
+  border-radius: 20px;
+  background-color: #4CAF50;
+}
 
 #messages {
   height: 21.5rem;
