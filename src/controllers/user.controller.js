@@ -49,6 +49,8 @@ const univeristy = () => valueWithTimeout("La Universidad es genial, en especial
 
 const encantado = () => valueWithTimeout("Igualmente (>‿◠)✌")
 
+const happy = () => valueWithTimeout("Yo también me alegro ^^")
+
 const defaultMessage = () => valueWithTimeout("No te he entendido muy bien,prueba con otra pregunta")
 
 
@@ -66,7 +68,7 @@ const actions = [
     {
         pattern: /Chuck Norris/gi,
         action: sayByChuck
-        //prueba
+        //prueba con json chuck norris ^^
     },
     {
         pattern: /Buenas tardes/gi,
@@ -169,6 +171,10 @@ const actions = [
     {
         pattern: /encantada/gi,
         action: encantado
+    },
+    {
+        pattern: /me alegro/gi,
+        action: happy
     }
 ]
 

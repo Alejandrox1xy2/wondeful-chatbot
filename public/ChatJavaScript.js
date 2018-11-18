@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(document.getElementById('cancelar')).click(function () {
         $(document.getElementById('myForm')).hide(800);
         $(document.getElementById('start')).show(1000);
-
+//jquery que utilice para unos botones pero al final lo he usado de otra forma
     });
 
     const socket = io();
