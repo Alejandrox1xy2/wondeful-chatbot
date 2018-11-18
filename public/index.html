@@ -7,7 +7,21 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 	<link rel="stylesheet" type="text/css" href="css/ChatBot.css">
 	<script src="ChatJavaScript.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $(document.getElementById('start')).click(function(){
+        $(this).hide(1000);
+        $(document.getElementById('myForm')).show(800);
 
+    });
+     $(document.getElementById('cancelar')).click(function(){
+         $(document.getElementById('myForm')).hide(800);
+        $(document.getElementById('start')).show(1000);
+
+    });
+});
+</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
