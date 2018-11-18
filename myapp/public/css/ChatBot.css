@@ -1,0 +1,133 @@
+
+textarea {
+ width: 90%;
+  padding: 1px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 180px;
+};
+
+
+
+body{
+	background-color: white;
+}
+.tope{
+	background-color: #FA8072;
+	color: white;
+	text-align: center;
+}
+.imagen{
+	margin:10px auto;
+	display:block;
+}
+
+img{
+	display:block;
+	margin:auto;
+}
+
+p{
+	font-size: 18px;
+	text-align: center;
+}
+
+ul {
+	font-size: 17px;
+	text-align: center;
+}
+
+.start2{
+	font-size: 30px;
+	background-color: white;
+	border: 2px solid #FA8072;;
+	color: #FA8072;
+	border-radius: 12px;
+}
+
+h2{
+
+	text-align: center;
+	border-style: solid;
+	border-radius: 200px;
+	overflow: hidden;
+	border-color: #FA8072;
+	display: inline;
+}
+
+div{
+	text-align: center;
+}
+
+footer {
+  background-color: #FA8072;
+  position: absolute;
+  text-align: center;
+  bottom: -30px;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+
+
+
+.chat {
+  display: none;
+  border-radius: 20px;	
+  position: absolute;
+  border-color: #FA8072;
+  align-content: center;
+  right: 690px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+ 
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.mensaje{
+	font-size: 25px;
+	text-align: center;
+ 	color: #FA8072;
+}
+
+.enviar{
+  background-color: #4CAF50;
+  border-radius: 20px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.cancel{
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+h1{
+	text-align: center;
+	color: white;
+};
+
+
+
+
