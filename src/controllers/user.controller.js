@@ -47,7 +47,10 @@ const reserve = () => valueWithTimeout("Para reservar una sala en la BUA solo ne
 
 const univeristy = () => valueWithTimeout("La Universidad es genial, en especial la de Alicante, ven cuando quieras y nunca querrás irte")
 
+const encantado = () => valueWithTimeout("Igualmente (>‿◠)✌")
+
 const defaultMessage = () => valueWithTimeout("No te he entendido muy bien,prueba con otra pregunta")
+
 
 
 const sayByChuck = async () => {
@@ -153,6 +156,19 @@ const actions = [
     {
         pattern: /BUA/gi,
         action: reserve
+    },
+    {
+        pattern: /no muy bien/gi,
+        action: bad
+    },
+    {
+        pattern: /encantado/gi,
+        action: encantado
+    }
+    ,
+    {
+        pattern: /encantada/gi,
+        action: encantado
     }
 ]
 
