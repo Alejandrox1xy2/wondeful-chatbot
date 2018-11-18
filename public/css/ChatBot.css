@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 
 textarea {
  width: 90%;
@@ -7,18 +13,16 @@ textarea {
   background: #f1f1f1;
   resize: none;
   min-height: 180px;
-};
-
-
-
-body{
-	background-color: white;
 }
-.tope{
+
+
+.header{
 	background-color: #FA8072;
 	color: white;
 	text-align: center;
 }
+
+
 .imagen{
 	margin:10px auto;
 	display:block;
