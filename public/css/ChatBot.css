@@ -84,8 +84,11 @@ footer {
   border-radius: 20px;
 }
 
+.user-message{
+color: #4CAF50;
+}
 #frm{
-  background-color: grey 
+  background-color: grey;
 }
 
 #butt{

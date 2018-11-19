@@ -17,7 +17,7 @@ const sayGoodMorning = () =>  valueWithTimeout("Buenos días,hoy hace un día es
 
 const sayGoodAfternoon = () => valueWithTimeout("Buenas tardes, ¿cómo ha ido tu mañana?")
 
-const sayGoodEvening = () => valueWithTimeout("Buenas noches, espero que descanses, conn amor Mira")
+const sayGoodEvening = () => valueWithTimeout("Buenas noches, espero que descanses, con amor Mira")
 
 const good = () => valueWithTimeout("¿Sí?, me alegro muchísimo (^◡^ )")
 
@@ -31,7 +31,7 @@ const aulario2 = () => valueWithTimeout("El Aulario II puedes encontrarlo en el 
 
 const aulario1 = () => valueWithTimeout("El Aulario I es el número 25 del mapa y podrás llegar al él yendo hacia el oeste desde la BUA(Biblioteca de la UA), verás el CS2(club social 2) y desde allí solo tendrás que pasar un camino rodeado de árboles hasta llegar a tu destino.")
 
-const thanks = () => valueWithTimeout("No es nada cielo, preguntame todo lo que quieras!!! Jajajaja")
+const thanks = () => valueWithTimeout("No es nada , preguntame todo lo que quieras!!! Jajajaja")
 
 const love = () => valueWithTimeout("Yo también te quiero ٩(˘◡˘ )")
 
@@ -51,24 +51,28 @@ const encantado = () => valueWithTimeout("Igualmente (>‿◠)✌")
 
 const happy = () => valueWithTimeout("Yo también me alegro ^^")
 
+const okey = () => valueWithTimeout("Okey makey")
+
+const jajaj = () => valueWithTimeout("Me parto y me mondoo")
+
+const phone = () => valueWithTimeout("El teléfono de la UA es: 965903464")
+
+const yourwelcome = () => valueWithTimeout("De nada a ti hombre jajajaja")
+
+const ua1 = () => valueWithTimeout("La UA se encuentra al lado de San Vicente, especificamente aquí: https://www.google.es/maps/place/Escuela+Polit%C3%A9cnica+Superior+de+la+Universidad+de+Alicante/@38.2616554,-0.8371109,11z/data=!4m8!1m2!2m1!1sua!3m4!1s0xd6236bb72bf619b:0x506e11c403138428!8m2!3d38.3845113!4d-0.5139324")
+
+const ua2 = () => valueWithTimeout("¿Qué es la UA🤔? Pues es una Universidad pública situada en la provincia de Alicante, donde te puedes matricular en el grado que más te guste para obtener un título universitario de esa carrera")
+
+const eps = () => valueWithTimeout("La escuela politécnica(EPS) el número 16 del mapa, se encuentra al lado de la escultura de la mano de la UA, allí se hacen  normalmente las clases para las ingenierías")
+
 const defaultMessage = () => valueWithTimeout("No te he entendido muy bien,prueba con otra pregunta")
 
 
-
-const sayByChuck = async () => {
-    const { value } = await getJSON('https://api.chucknorris.io/jokes/random')
-    return value;
-}
 
 const actions = [
     {
         pattern: /Buenos días/gi,
         action: sayGoodMorning
-    },
-    {
-        pattern: /Chuck Norris/gi,
-        action: sayByChuck
-        //prueba con json chuck norris ^^
     },
     {
         pattern: /Buenas tardes/gi,
@@ -84,6 +88,10 @@ const actions = [
     },
     {
         pattern: /Hola/gi,
+        action: hello
+    },
+    {
+        pattern: /hey/gi,
         action: hello
     }
     ,
@@ -182,8 +190,44 @@ const actions = [
     }
     ,
     {
-        pattern: /buenos noches/gi,
+        pattern: /buenas noches/gi,
         action: sayGoodEvening
+    },
+    {
+        pattern: /eps/gi,
+        action: eps
+    },
+    {
+        pattern: /Escuela Politecnica/gi,
+        action: eps
+    },
+    {
+        pattern: /Ok/gi,
+        action: okey
+    },
+    {
+        pattern: /ja/gi,
+        action: jajaj
+    },
+    {
+        pattern: /donde esta la ua/gi,
+        action: ua1
+    },
+    {
+        pattern: /que es la ua/gi,
+        action: ua2
+    },
+    {
+        pattern: /telefono/gi,
+        action: phone
+    },
+    {
+        pattern: /hasta mañana/gi,
+        action: goodbye
+    },
+    {
+        pattern: /de nada/gi,
+        action: yourwelcome
     }
 ]
 

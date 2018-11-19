@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(document.getElementById('start')).click(function () {
+    $(document.getElementById('')).click(function () {
         $(this).hide(1000);
         $(document.getElementById('myForm')).show(800);
 
@@ -9,6 +9,8 @@ $(document).ready(function () {
         $(document.getElementById('start')).show(1000);
 //jquery que utilice para unos botones pero al final lo he usado de otra forma
     });
+
+    
 
     const socket = io();
 
